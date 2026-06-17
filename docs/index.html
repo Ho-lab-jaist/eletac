@@ -54,6 +54,35 @@
 .links a:hover {
   background-color: #f0f0f0;
 }
+
+    .comparison {
+  margin: 60px auto;
+  max-width: 1200px;
+}
+
+.comparison h2 {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f5f5f5;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
   </style>
 </head>
 
@@ -85,6 +114,121 @@
   <p>
     Soft grippers offer gentle interaction with objects, significantly reducing the risk of damage. Their compliance in both material and structure allows them to adapt to a wide variety of object shapes and sizes. However, the deformable nature of soft grippers poses challenges for integrating precise proprioception and tactile sensing, especially when aiming for large-area, high-resolution tactile perception. In nature, the elephant's trunk exemplifies an ideal combination of compliance and tactile sensitivity, enabling it to delicately manipulate diverse objects without causing damage while also exploring its surroundings through touch. Inspired by this, we present EleTac, a soft, vision-based tactile gripper that enables safe object grasping via a pinch-like motion and delivers high-resolution, full-surface tactile feedback for integrated proprioceptive and exteroceptive sensing.
   </p>
+</section>
+
+  <section class="comparison">
+  <h2>Comparison with Existing Vision-Based Tactile Soft Grippers</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Soft Gripper</th>
+        <th>Tactile Region</th>
+        <th>Sensor Family</th>
+        <th>Cameras per Gripper</th>
+        <th>Proprioception</th>
+        <th>Exteroception</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>GelSight Fin Ray</td>
+        <td>Inner fingertip</td>
+        <td>GelSight</td>
+        <td>2</td>
+        <td>✗</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>GelSight Baby Fin Ray</td>
+        <td>Inner fingertip</td>
+        <td>GelSight</td>
+        <td>2</td>
+        <td>✗</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>DexiTac</td>
+        <td>Inner fingertip</td>
+        <td>TacTip</td>
+        <td>2</td>
+        <td>✗</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>She et al.</td>
+        <td>Inner finger</td>
+        <td>GelSight</td>
+        <td>4</td>
+        <td>✓</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>Zhang et al.</td>
+        <td>Palm</td>
+        <td>GelSight</td>
+        <td>1</td>
+        <td>✗</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>PaLmTac</td>
+        <td>Palm</td>
+        <td>GelSight</td>
+        <td>1</td>
+        <td>✗</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>TacPalm</td>
+        <td>Palm</td>
+        <td>TacTip</td>
+        <td>1</td>
+        <td>✗</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>Liu et al.</td>
+        <td>Palm &amp; Inner finger</td>
+        <td>GelSight</td>
+        <td>8</td>
+        <td>✗</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>Zhang et al.</td>
+        <td>Finger</td>
+        <td>Coloured Chamber &amp; Endoscope Camera</td>
+        <td>&ge; 2</td>
+        <td>✓</td>
+        <td>✗</td>
+      </tr>
+      <tr>
+        <td>Faris et al.</td>
+        <td>Finger</td>
+        <td>Marker &amp; Event-based Camera</td>
+        <td>&ge; 2</td>
+        <td>✓</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>Zhang et al.</td>
+        <td>Inner Finger</td>
+        <td>GelSight</td>
+        <td>2</td>
+        <td>✓</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td><strong>EleTac (Ours)</strong></td>
+        <td><strong>Whole gripper</strong></td>
+        <td><strong>GelSight</strong></td>
+        <td><strong>1</strong></td>
+        <td><strong>✓</strong></td>
+        <td><strong>✓</strong></td>
+      </tr>
+    </tbody>
+  </table>
 </section>
 </body>
 </html>
